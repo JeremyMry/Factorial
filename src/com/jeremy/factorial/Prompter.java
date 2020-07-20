@@ -1,13 +1,12 @@
 package com.jeremy.factorial;
 
-import java.util.Scanner;
+import javax.swing.*;
 
 public class Prompter {
 
     public int GetFactorialPrompt() {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the factorial you want to resolve: ");
-        int factorial = sc.nextInt();
+        JOptionPane jop = new JOptionPane();
+        int factorial = Integer.parseInt(jop.showInputDialog(null, "Enter the factorial you want to resolve: ", "Factorial Calculator", JOptionPane.QUESTION_MESSAGE));
         return factorial;
     }
 }

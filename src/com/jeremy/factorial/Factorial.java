@@ -1,5 +1,7 @@
 package com.jeremy.factorial;
 
+import javax.swing.*;
+
 public class Factorial {
 
     public int factorialCalcul(int n) {

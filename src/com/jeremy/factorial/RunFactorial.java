@@ -1,6 +1,6 @@
 package com.jeremy.factorial;
 
-import java.util.Scanner;
+import javax.swing.*;
 
 public class RunFactorial {
      public static void main(String[] args) {
@@ -9,6 +9,8 @@ public class RunFactorial {
          int factorial = prompt.GetFactorialPrompt();
 
          Factorial fact = new Factorial();
-         System.out.println(fact.factorialCalcul(factorial));
+
+         JOptionPane jop = new JOptionPane();
+         jop.showMessageDialog(null, "The result is " + fact.factorialCalcul(factorial), "Factorial Calculator", JOptionPane.INFORMATION_MESSAGE);
      }
 }
